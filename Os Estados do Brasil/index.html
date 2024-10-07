@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra o Brasil</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <header>
+        <h1>Descubra o Brasil</h1>
+        <div>
+            <input type="text" id="search" placeholder="Filtrar Estados">
+            <button onclick="filterStates()">Pesquisar</button>
+        </div>
+    </header>
+    <div class="resultados" id="resultado">
+        <div class="item-resultados">
+            <div class="header">
+                <i class="ph ph-city"></i>
+                <h2>Acre</h2>
+            </div>
+            <p>Acre é conhecido por sua rica biodiversidade e cultura indígena, com a Floresta Amazônica como destaque.</p>
+            <a href="https://pt.wikipedia.org/wiki/Acre">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2><i class="ph ph-city"></i>Alagoas</h2>
+            <p>Alagoas é famosa por suas belas praias e lagoas, destacando-se como um destino turístico no Nordeste.</p>
+            <a href="https://pt.wikipedia.org/wiki/Alagoas">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2><i class="ph ph-city"></i>Amapá</h2>
+            <p>Amapá abriga a Linha do Equador e possui vastas áreas de floresta tropical, rica em fauna e flora.</p>
+            <a href="https://pt.wikipedia.org/wiki/Amapá">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Amazonas</h2>
+            <p>Amazonas é o maior estado do Brasil e lar da maior parte da Floresta Amazônica, vital para o clima global.</p>
+            <a href="https://pt.wikipedia.org/wiki/Amazonas_(Brasil)">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Bahia</h2>
+            <p>Bahia é conhecida por sua cultura rica, incluindo música, dança e culinária, além das lindas praias.</p>
+            <a href="https://pt.wikipedia.org/wiki/Bahia">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Ceará</h2>
+            <p>Ceará é famoso por suas praias e o tradicional forró, além de ser um importante centro turístico do Nordeste.</p>
+            <a href="https://pt.wikipedia.org/wiki/Ceará">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Distrito Federal</h2>
+            <p>O Distrito Federal abriga a capital do Brasil, Brasília, famosa por sua arquitetura moderna e planejamento urbano.</p>
+            <a href="https://pt.wikipedia.org/wiki/Distrito_Federal_(Brasil)">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Espírito Santo</h2>
+            <p>Espírito Santo é conhecido por suas montanhas, praias e pela produção de café e azeite de oliva.</p>
+            <a href="https://pt.wikipedia.org/wiki/Espírito_Santo">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Goiás</h2>
+            <p>Goiás é rico em cultura sertaneja e natureza, sendo lar do Parque Nacional da Chapada dos Veadeiros.</p>
+            <a href="https://pt.wikipedia.org/wiki/Goiás">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Maranhão</h2>
+            <p>Maranhão abriga os Lençóis Maranhenses, um deserto de areia branca e lagoas cristalinas, além da cultura rica.</p>
+            <a href="https://pt.wikipedia.org/wiki/Maranhão">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Mato Grosso</h2>
+            <p>Mato Grosso é conhecido pela biodiversidade do Pantanal e pela produção agropecuária em grande escala.</p>
+            <a href="https://pt.wikipedia.org/wiki/Mato_Grosso">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Mato Grosso do Sul</h2>
+            <p>Mato Grosso do Sul é famoso pelo Pantanal, um dos maiores ecossistemas alagados do mundo.</p>
+            <a href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Minas Gerais</h2>
+            <p>Minas Gerais é conhecido por sua culinária, rica cultura e montanhas, além de ser o berço do ouro no Brasil.</p>
+            <a href="https://pt.wikipedia.org/wiki/Minas_Gerais">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Pará</h2>
+            <p>Pará é conhecido pela rica cultura amazônica e pela produção de açaí, um fruto famoso em todo o Brasil.</p>
+            <a href="https://pt.wikipedia.org/wiki/Pará">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Paraíba</h2>
+            <p>Paraíba destaca-se por suas praias e pela música popular, além de eventos culturais como o São João.</p>
+            <a href="https://pt.wikipedia.org/wiki/Paraíba">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Paraná</h2>
+            <p>Paraná é famoso pelas Cataratas do Iguaçu, um dos maiores cartões-postais do Brasil e Patrimônio da Humanidade.</p>
+            <a href="https://pt.wikipedia.org/wiki/Paraná">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Pernambuco</h2>
+            <p>Pernambuco é conhecido pelo frevo, a culinária e as belas praias de Porto de Galinhas.</p>
+            <a href="https://pt.wikipedia.org/wiki/Pernambuco">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Piauí</h2>
+            <p>Piauí é famoso pelo Parque Nacional da Serra da Capivara, com sítios arqueológicos de valor histórico.</p>
+            <a href="https://pt.wikipedia.org/wiki/Piauí">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Rio de Janeiro</h2>
+            <p>Rio de Janeiro é famoso por suas praias, o carnaval e o icônico Cristo Redentor, atraindo turistas do mundo todo.</p>
+            <a href="https://pt.wikipedia.org/wiki/Rio_de_Janeiro">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Rio Grande do Norte</h2>
+            <p>Rio Grande do Norte é conhecido pelas suas praias e o famoso sol, além do Parque das Dunas.</p>
+            <a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Norte">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Rio Grande do Sul</h2>
+            <p>Rio Grande do Sul destaca-se pela cultura gaúcha e pela produção de vinho e churrasco.</p>
+            <a href="https://pt.wikipedia.org/wiki/Rio_Grande_do_Sul">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Rondônia</h2>
+            <p>Rondônia é conhecido por sua biodiversidade e pela produção agrícola, sendo parte da Amazônia.</p>
+            <a href="https://pt.wikipedia.org/wiki/Rondônia">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Roraima</h2>
+            <p>Roraima é o estado menos povoado do Brasil, com vastas áreas de floresta e o Monte Roraima como destaque.</p>
+            <a href="https://pt.wikipedia.org/wiki/Roraima">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Santa Catarina</h2>
+            <p>Santa Catarina é famosa por suas praias e pela cultura alemã e italiana, além do turismo em montanhas.</p>
+            <a href="https://pt.wikipedia.org/wiki/Santa_Catarina">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>São Paulo</h2>
+            <p>São Paulo é a maior cidade do Brasil, um centro financeiro e cultural, com intensa vida noturna e diversidade.</p>
+            <a href="https://pt.wikipedia.org/wiki/São_Paulo">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Sergipe</h2>
+            <p>Sergipe é o menor estado do Brasil, famoso pelas suas festas juninas e belas praias no litoral.</p>
+            <a href="https://pt.wikipedia.org/wiki/Sergipe">Mais Informações</a>
+        </div>
+        <div class="item-resultados">
+            <h2>Tocantins</h2>
+            <p>Tocantins é conhecido por suas belezas naturais, incluindo o Parque do Jalapão, famoso por suas dunas.</p>
+            <a href="https://pt.wikipedia.org/wiki/Tocantins">Mais Informações</a>
+        </div>
+    </div>
+
+    <script src="dados.js"></script>
+</body>
+</html>
